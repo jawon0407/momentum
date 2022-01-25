@@ -32,8 +32,8 @@ function paintToDo(todoIt){
     const button = document.createElement("button");
     button.innerText="❌"
     button.addEventListener("click",deleteToDo);
-    li.appendChild(span);
     li.appendChild(button);
+    li.appendChild(span);
     //element.appendChild = element안에 자식 element를 만든다는 의미! 
     toDoList.appendChild(li);
 }

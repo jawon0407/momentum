@@ -1,14 +1,71 @@
-.hidden {
-  display: none;
-}
-#quote {
+@import "reset.css";
+
+body {
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  flex-direction: column;
+  position: relative;
 }
+
+#clock {
+  margin: 50px 0px;
+  font-size: 60px;
+  z-index: 2;
+}
+
+.hidden {
+  display: none;
+}
+
+#login-form input,
+#todo-form input {
+  border: none;
+  border-bottom: 1px solid wheat;
+  border-radius: 10px;
+  padding: 10px 50px;
+  background-color: transparent;
+  margin: 50px 0px;
+}
+
+#login-form input::placeholder {
+  text-align: center;
+}
+
+#login-form input:focus,
+#todo-form input:focus {
+  outline: none;
+}
+#greeting {
+  font-size: 40px;
+  font-family: "Bebas Neue", cursive;
+}
+
+#quote {
+  display: flex;
+  position: absolute;
+  bottom: 50px;
+  font-size: 20px;
+  font-family: "Dongle", sans-serif;
+}
+
 #quote span {
   text-align: center;
+}
+
+#todo-list {
+  margin-top: 20px;
+}
+
+#todo-list button {
+  border: none;
+  margin: 0px 10px;
+  background-color: transparent;
+}
+#todo-list li {
+  border: none;
+  margin: 10px 0px;
 }
 
 img {
@@ -20,4 +77,13 @@ img {
   position: absolute;
   z-index: -1;
   opacity: 0.6;
+  background-size: cover;
+}
+
+.music-bar {
+  padding: 5px 35px;
+  background-color: black;
+  position: absolute;
+  top: 20px;
+  left: 10px;
 }
