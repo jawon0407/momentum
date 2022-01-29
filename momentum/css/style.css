@@ -34,10 +34,6 @@ body > img {
   display: none;
 }
 
-.hidden-box {
-  display: none;
-}
-
 #login-form input,
 #todo-form input {
   border: none;
@@ -109,6 +105,11 @@ body > img {
   font-size: 20px;
 }
 
+.music-bar > div {
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
 #website-box {
   display: flex;
   flex-direction: column;
@@ -116,16 +117,39 @@ body > img {
   top: 33%;
   left: 10px;
   z-index: 2;
+  animation: web-appear 2.5s forwards ease-in-out;
 }
-
-#website-box > div {
-  margin: 10px 0px;
+@keyframes web-appear {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 #website-box img {
   width: 30px;
   height: 30px;
   border-radius: 10px;
+}
+
+.website-box-content {
+  margin: 15px 0px;
+  transform: translateX(5px);
+}
+
+.website-closebox {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 .web-bar {
