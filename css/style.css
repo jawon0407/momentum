@@ -117,6 +117,8 @@ body > img {
   top: 33%;
   left: 10px;
   z-index: 2;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
   animation: web-appear 2.5s forwards ease-in-out;
 }
 @keyframes web-appear {
@@ -144,12 +146,12 @@ body > img {
 .website-closebox {
   width: 40px;
   height: 40px;
-  border-radius: 10px;
+  border-radius: 50%;
   cursor: pointer;
   text-align: center;
   border: none;
-  background-color: transparent;
-  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.2);
+  background-color: wheat;
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.4);
 }
 
 .web-bar {
