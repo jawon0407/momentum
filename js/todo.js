@@ -45,7 +45,6 @@ function paintToDo(todoIt){
 function deleteToDo(event){
     const li = event.target.parentElement;
     li.remove();
-    console.log(li.id);
     toDos = toDos.filter((toDo)=> toDo.id !== parseInt(li.id))
     //li.id = element에 만들었기 때문에 number가 아닌 string으로 간주되어서 parseInt를 써줘야한다.
     saveToDos();
