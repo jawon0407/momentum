@@ -184,3 +184,13 @@ body > img {
 .web-bar i {
   color: black;
 }
+
+#weather{
+  position:absolute;
+  top: 20px;
+  right: 10px;
+}
+#weather span:last-child{
+  display:block;
+  text-align: center;
+}
